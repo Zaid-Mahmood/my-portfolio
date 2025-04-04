@@ -10,21 +10,19 @@ import "./App.css";
 function App() {
   return (
     <div className="App">
-         <ToastContainer
-position="top-right"
-theme="dark"
-/>
+      <ToastContainer
+        position="top-right"
+        theme="dark"
+      />
       <BrowserRouter>
+
         <Navbar />
-        <div className="verticalBackground">
-          <Routes>
-            <Route exact path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/portfolio" element={<Portfolio />} />
-            <Route path="/contact" element={<Contact />} />
-          </Routes>
-          </div>
-            <Footer />
+            <Routes>
+              <Route exact path="/" element={<Home />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/portfolio" element={<Portfolio />} />
+              <Route path="/contact" element={<Contact />} />
+            </Routes>
       </BrowserRouter>
     </div>
   );

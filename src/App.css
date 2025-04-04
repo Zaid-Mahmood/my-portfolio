@@ -1,13 +1,13 @@
+
 .App {
     color: white;
     font-size: 15px;
     background-color: black;
-    height: 100vh;
+    overflow: hidden;
 }
 .verticalBackground{
     background-color: black;
 }
-
 
 .menus li {
     display: inline-block;

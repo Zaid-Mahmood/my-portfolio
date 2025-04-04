@@ -12,6 +12,13 @@ function Typedjs() {
                 style: "object-fit: cover; background-color:black;",
             },
             {
+                text: '<i>Next Js</i> Developer',
+                image: process.env.PUBLIC_URL + "/assets/nextjs.jpeg",
+                width: '80px',
+                height: '80px',
+                style: "object-fit: cover; background-color:black;",
+            },
+            {
                 text: '<i>Javascript</i> Developer',
                 image: process.env.PUBLIC_URL + "/assets/js.webp",
                 width: '70px',
@@ -41,6 +48,7 @@ function Typedjs() {
     return (
         <div>
             <p className='mySpecs m-0'><span ref={el} /></p>
+            <p className='mySpecsMobile'><span ref={el} /></p>
         </div>
     )
 }

@@ -60,10 +60,10 @@
         display: block;
     }
     .navbarSection{
-        background-image: linear-gradient(to right, black , rgb(214, 72, 96));
+        background-image: linear-gradient(to right, rgb(61, 44, 44) , rgb(214, 72, 96));
     }
     .offcanvas-end{
-        background-image: linear-gradient(to right, black , rgb(214, 72, 96));
+        background-image: linear-gradient(to right, rgb(61, 44, 44)  , rgb(214, 72, 96));
         opacity: 0.8;
     }
     .nameLink{

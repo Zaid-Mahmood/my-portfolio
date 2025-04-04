@@ -1,5 +1,6 @@
 import "../Styles/Portfolio.css";
 import { useState } from 'react';
+import Footer from "./Footer";
 function Portfolio() {
   const firstRow =
     <div className='row'>
@@ -50,7 +51,7 @@ function Portfolio() {
   }
   return (
     <div className='porfolioSection container text-center'>
-      <div className=''>
+      <div>
         <h3>My Work</h3>
       </div>
 
@@ -139,7 +140,7 @@ function Portfolio() {
         </>
         :
         <>
-            {firstRow}
+          {firstRow}
 
           <div className="text-center">
             <button className="mt-3 seeMoreBtn text-decoration-none" onClick={() => seeBtn()}>See more</button>
@@ -147,6 +148,7 @@ function Portfolio() {
         </>
       }
 
+      <Footer />
     </div>
   )
 }

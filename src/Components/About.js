@@ -1,13 +1,15 @@
 import React, { useState } from 'react'
 import "../Styles/About.css";
+import Footer from './Footer';
 function About() {
   const [activeState, setActiveState] = useState('Skills')
   function activeTab(tab) {
     setActiveState(tab)
   }
   return (
+    <div style={{height : "100vh"}}>
     <div className='container-fluid aboutSection'>
-      
+
       <div className='col-md-12'>
         <div className='row'>
           <div className='col-md-1'></div>
@@ -22,7 +24,7 @@ function About() {
 
           <div className='col-md-5'>
             <h2>About Me</h2>
-            <p className='text-secondary'>I am a web developer 👨‍💻 with 1.5 years of experience in the IT industry, specializing in building web applications using JavaScript, React.js, Bootstrap, and various other libraries and frameworks. I enjoy designing websites and making them functional. I am constantly expanding my skills and knowledge to build websites with new technologies.
+            <p className='text-secondary'>I am a web developer 👨‍💻 with 2 years of experience in the IT industry, specializing in building web applications using JavaScript, React.js, Next JS , Bootstrap, and various other libraries and frameworks. I enjoy designing websites and making them functional. I am constantly expanding my skills and knowledge to build websites with new technologies.
             </p>
 
             {/* Skills , Experience , Education */}
@@ -37,39 +39,48 @@ function About() {
               {activeState === "Skills" ?
                 <div className='webDevelopmentSkill text-secondary text-uppercase'>
                   <p><b>Languages: <span>HTML5 , CSS3 , Javascript</span></b></p>
-                  <p><b>Frameworks: <span>React JS , Bootstrap , Tailwind CSS</span></b></p>
-                  <p><b>Source Controls: <span>Git / Github</span></b></p>
+                  <p><b>Frameworks: <span>React JS , Next JS , Bootstrap , Tailwind CSS</span></b></p>
+                  <p><b>Source Controls: <span>Git / Github , Azure DevOps Server</span></b></p>
                   <p><b>Designing Tool: <span>Canva</span></b></p>
                 </div> :
                 activeState === "Experience" ?
                   <div className='experience text-secondary'>
                     <div className='d-flex align-items-center'>
                       <div className='logos'>
-                      <img className='companyLogo' src={process.env.PUBLIC_URL + "/assets/codeHuddleImage.jpg"} alt="ch-pic" />
-                    </div>
-                    <div>
-                      <p className='px-2 m-0'><b>Code Huddle: <span>October-2021 to August-2022</span></b></p>
-                      <p className='px-2 m-0'>Frontend Web Developer</p>
-                    </div>
+                        <img className='companyLogo' src={process.env.PUBLIC_URL + "/assets/codeHuddleImage.jpg"} alt="ch-pic" />
+                      </div>
+                      <div>
+                        <p className='px-2 m-0'><b>Code Huddle: <span>October-2021 to August-2022</span></b></p>
+                        <p className='px-2 m-0'>Frontend Web Developer</p>
+                      </div>
                     </div>
 
                     <div className='d-flex align-items-center py-2'>
                       <div className='logos'>
-                      <img className='companyLogo' src={process.env.PUBLIC_URL + "/assets/codSoftLogo.jpg"} alt="ch-pic" />
-                    </div>
-                    <div>
-                      <p className='px-2 m-0'><b>CodSoft: <span>October-2023</span></b></p>
-                      <p className='px-2 m-0'>Web Development Internship</p>
-                    </div>
+                        <img className='companyLogo' src={process.env.PUBLIC_URL + "/assets/codSoftLogo.jpg"} alt="ch-pic" />
+                      </div>
+                      <div>
+                        <p className='px-2 m-0'><b>CodSoft: <span>October-2023</span></b></p>
+                        <p className='px-2 m-0'>Web Development Internship</p>
+                      </div>
                     </div>
                     <div className='d-flex align-items-center'>
                       <div className='logos'>
-                      <img className='companyLogo' src={process.env.PUBLIC_URL + "/assets/fahadTechSolImg.jpg"} alt="ch-pic" />
+                        <img className='companyLogo' src={process.env.PUBLIC_URL + "/assets/fahadTechSolImg.jpg"} alt="ch-pic" />
+                      </div>
+                      <div>
+                        <p className='px-2 m-0'><b>Fahad Tech Solution: <span>May-2023 to October-2023</span></b></p>
+                        <p className='px-2 m-0'>Web Development Internship</p>
+                      </div>
                     </div>
-                    <div>
-                      <p className='px-2 m-0'><b>Fahad Tech Solution: <span>May-2023 to Present</span></b></p>
-                      <p className='px-2 m-0'>Frontend Developer</p>
-                    </div>
+                    <div className='d-flex align-items-center'>
+                      <div className='logos'>
+                        <img className='companyLogo' src={process.env.PUBLIC_URL + "/assets/precise-logo.png"} alt="ch-pic" />
+                      </div>
+                      <div>
+                        <p className='px-2 m-0'><b>Precise Tech: <span>November-2023 to November-2024</span></b></p>
+                        <p className='px-2 m-0'>Next Js Developer</p>
+                      </div>
                     </div>
                   </div> :
                   <div className='education text-secondary text-uppercase'>
@@ -88,6 +99,10 @@ function About() {
         </div>
       </div>
      
+    </div>
+    <div>
+        <Footer />
+      </div>
     </div>
   )
 }

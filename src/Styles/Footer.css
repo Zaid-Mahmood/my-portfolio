@@ -1,5 +1,4 @@
 .footerSection {
-    width: 100%;
     background-color: black;
 }
 
@@ -23,3 +22,5 @@ button:hover{
     text-decoration: underline;
     border-bottom: 1px solid #ff004f;
 }
+
+

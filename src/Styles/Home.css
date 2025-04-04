@@ -1,16 +1,10 @@
+.homeWidth{
+    width: 100vw;
+}
 .firstName {
     color: rgb(214, 72, 96);
     font-family: 'Bree Serif', serif;
     font-size: 30px;
-}
-.homeSection{
-    height: 100vh;
-}
-
-.homePhoto {
-    width: 50%;
-    height: 50%;
-    object-fit: cover;
 }
 
 .mySpecs,
@@ -19,8 +13,9 @@
     color: white;
     max-width: 100%;
 }
-.typedHeight{
-    height: 6em!important;
+
+.typedHeight {
+    height: 6em !important;
 }
 
 .introSection {
@@ -48,34 +43,33 @@
     text-decoration: none;
     color: white;
 }
+
 @media only screen and (min-width : 768px) {
-    
-    .largeSizeIntroSection{
+
+    .largeSizeIntroSection {
         display: flex;
         align-items: center;
     }
+
     .smallSizeIntroSection {
-        
         display: none;
     }
 }
 
-@media only screen and (max-width : 767px) {
-  
-    .largeSizeIntroSection{
+@media (min-width : 300px) and (max-width : 767px) {
+
+    .largeSizeIntroSection {
         display: none;
     }
+
     .smallSizeIntroSection {
         display: flex;
-        align-items: center;
+        justify-content: space-between;
         padding-top: 5em;
     }
-}
-
- @media only screen and (max-width : 575px) {
-    .smallSizeIntroSection {
-        padding-top: 5em;
-    }
+    .verticalBackground{
+        margin: 0;
+        }
     .myDescription,
     .firstName,
     .resumePdf {
@@ -84,13 +78,16 @@
         grid-template-columns: max-content;
         padding: 0;
     }
-    .typedHeight{
-        height: 5em!important;
-        width: 15em;
+    .mySpecs{
+        display: none;
     }
-    .homePhoto {
-        width: 100%;
-        height: 100%;       
-        object-fit: cover; 
-        }
-} 
+    .mySpecsMobile{
+        display: block;
+        height: 5em;
+        width: 5em;
+    }
+}
+
+
+
+

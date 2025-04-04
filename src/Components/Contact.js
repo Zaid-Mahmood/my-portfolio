@@ -3,7 +3,7 @@ import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as yup from 'yup';
 import emailjs from '@emailjs/browser';
 import { toast } from 'react-toastify';
-
+import Footer from "./Footer";
 function Contact() {
   const handleSubmit = (values, { resetForm }) => {
     const serviceId = "service_tnaoccn";
@@ -48,7 +48,7 @@ function Contact() {
     textareaField: yup.string().required("Please enter your message").max(200, "Maximum 200 words are allowed")
   })
   return (
-    <div className='contactSection container'>
+    <div style={{height : "100vh"}} className='contactSection container position-relative'>
       <div className='form'>
         <Formik initialValues={initialValues} validationSchema={validationSchema} onSubmit={handleSubmit}>
           <Form>
@@ -109,7 +109,9 @@ function Contact() {
           </Form>
         </Formik>
       </div>
-  
+      <div className="position-absolute start-50 bottom-0 translate-middle">
+  <Footer />
+  </div>
     </div>
   )
 }
