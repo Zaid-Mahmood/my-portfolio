@@ -7,8 +7,8 @@ function About() {
     setActiveState(tab)
   }
   return (
-    <div style={{height : "100vh"}}>
-    <div className='container-fluid aboutSection'>
+    <div>
+    <div className='container-fluid aboutSection my-5'>
 
       <div className='col-md-12'>
         <div className='row'>
@@ -100,10 +100,8 @@ function About() {
       </div>
      
     </div>
-    <div>
         <Footer />
       </div>
-    </div>
   )
 }
 

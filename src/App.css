@@ -4,6 +4,7 @@
     font-size: 15px;
     background-color: black;
     overflow: hidden;
+    height: fit-content;
 }
 .verticalBackground{
     background-color: black;

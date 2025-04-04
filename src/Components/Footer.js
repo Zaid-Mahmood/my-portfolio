@@ -1,7 +1,7 @@
 import "../Styles/Footer.css";
 function Footer() {
     return (
-        <div className='footerSection pt-5'>
+        <div className='footerSection py-2'>
             <div className='followText text-center'>
                 <h2>Follow Me</h2>
 

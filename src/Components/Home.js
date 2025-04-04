@@ -6,7 +6,8 @@ import Footer from './Footer';
 function Home() {
 
   return (
-    <div className='position-relative' style={{height : "100vh"}}>
+    <div className='position-relative' style={{height : "100vh"}} >
+      <div className='position-absolute top-0'>
       <div className='homeWidth'>
         <div className='container'>
           <div className='row'>
@@ -22,7 +23,7 @@ function Home() {
                 <button className='resumePdf'><a className='resumeAnchor' href={resume} download="Resume.pdf">Download CV</a></button>
               </div>
 
-              <div className="col-md-6" style={{ marginTop: "15%", marginBottom: "10%" }} >
+              <div className="col-md-6" style={{ marginTop: "10%", marginBottom: "5%" }} >
                 <div className='d-flex align-items-center justify-content-end homePhotoSize'>
                   <div className="position-relative">
                     <div
@@ -117,7 +118,8 @@ function Home() {
         </div>
         <div className='col-md-1'></div>
       </div>
-      <div className='position-absolute  start-50 bottom-0 translate-middle'>
+      </div>
+      <div  className='position-absolute start-50 bottom-0 translate-middle'>
       <Footer/>
       </div>
     </div>
