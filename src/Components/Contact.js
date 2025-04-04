@@ -52,7 +52,7 @@ function Contact() {
       <div className='form'>
         <Formik initialValues={initialValues} validationSchema={validationSchema} onSubmit={handleSubmit}>
           <Form>
-            <div className="mt-2 text-center pb-1" ><h2>Contact Me</h2></div>
+            <div className="mt-5 text-center pb-1" ><h2>Contact Me</h2></div>
               <div className='row mx-auto'>
                 <div className="col-md-4 d-grid align-content-center">
                   <div className="d-inline-block">
@@ -100,7 +100,7 @@ function Contact() {
                   </div>
 
                   <div className="text-center">
-                  <button type="submit" className="seeMoreBtn mt-5 text-decoration-none">Submit</button>
+                  <button type="submit" className="seeMoreBtn mt-2 text-decoration-none">Submit</button>
                   </div>
 
                 </div>
