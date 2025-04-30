@@ -78,7 +78,7 @@ function About() {
                         <img className='companyLogo' src={process.env.PUBLIC_URL + "/assets/precise-logo.png"} alt="ch-pic" />
                       </div>
                       <div>
-                        <p className='px-2 m-0'><b>Precise Tech: <span>November-2023 to Present</span></b></p>
+                        <p className='px-2 m-0'><b>Precise Tech: <span>November-2023 to November 2024</span></b></p>
                         <p className='px-2 m-0'>Next Js Developer</p>
                       </div>
                     </div>
